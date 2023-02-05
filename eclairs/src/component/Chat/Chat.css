@@ -1,0 +1,91 @@
+.chatPage{
+    background-color: rgb(31 , 29, 29);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chatContainer{
+    background-color: white;
+    height: 50%;
+    width: 50%;
+}
+.header{
+    height: 30%;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: baseline;
+    font-size: 3vmax;
+    box-sizing: border-box;
+}
+.closeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.closeIcon{
+    color: white;
+    filter: invert();
+    height: 1.5vmax;
+    margin: 2vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.closeIcon:hover{
+    transform: scale(1.5);
+}
+.header>h2{
+    color: white;
+    margin: 1.5vmax;
+}
+.chatBox{
+    height: 70%;
+    box-sizing: border-box;
+}
+.inputBox{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#chatInput{
+    width: 80%;
+    border: none;
+    background-color: white;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1.2vmax;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0.2vmax solid rgba(0, 0, 0, 0.562);
+}
+.sendBtn{
+    background-color:crimson;
+    color:white;
+    border: none;
+    width: 20%;
+    height: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sendBtn>img{
+    height: 2vmax;
+    filter:brightness(100) invert();
+    transition: all 0.3s;
+
+}
+.sendBtn:hover{
+    background-color: rgb(193, 44, 73);
+
+}
+.sendBtn:hover img{
+    transform: translateX(10px);
+}
